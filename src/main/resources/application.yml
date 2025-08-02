@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ashare
+    username: asha
+    password: asha123
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # Автоматично створює / оновлює таблиці
+    show-sql: true       # Виводить SQL у консоль
+    properties:
+      hibernate:
+        format_sql: true # Форматує SQL для зручності читання
+
