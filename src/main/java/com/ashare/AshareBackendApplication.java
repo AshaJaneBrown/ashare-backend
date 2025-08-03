@@ -9,4 +9,5 @@ public class AshareBackendApplication {
     public static void main(String[] args) {
         SpringApplication.run(AshareBackendApplication.class, args);
     }
+
 }

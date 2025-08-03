@@ -16,3 +16,5 @@ spring:
       hibernate:
         format_sql: true # Форматує SQL для зручності читання
 
+jwt:
+  secret: mysupersecretkeyforashare12345678901234567890

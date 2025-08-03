@@ -5,18 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="590cd30a-89b6-41ec-a37e-9d7fefb80110" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ashare/AshareBackendApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ashare/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ashare/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ashare/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ashare/admin/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ashare/auth/config/CorsGlobalConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ashare/auth/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ashare/auth/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ashare/auth/dto/AuthResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ashare/auth/dto/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ashare/auth/dto/RegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ashare/auth/jwt/JwtAuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ashare/auth/jwt/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ashare/auth/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ashare/user/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start-postgres.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stop-postgres.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashare/AshareBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashare/AshareBackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashare/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashare/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashare/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashare/user/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ashare/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ashare/user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +35,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -49,35 +59,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Anna Myropolska/Documents/ashare/ashare-ui",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "7e880ce9eb8dccbf0118d6639815644e",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Anna Myropolska/IdeaProjects/ashare-backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;7e880ce9eb8dccbf0118d6639815644e&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Anna Myropolska\IdeaProjects\ashare-backend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Anna Myropolska\IdeaProjects\ashare-backend" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="AshareBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="ashare-backend" />
@@ -107,7 +125,8 @@
       <option name="presentableId" value="Default" />
       <updated>1754134730532</updated>
       <workItem from="1754134731730" duration="3545000" />
-      <workItem from="1754139216436" duration="6355000" />
+      <workItem from="1754139216436" duration="21279000" />
+      <workItem from="1754219049417" duration="3562000" />
     </task>
     <servers />
   </component>
