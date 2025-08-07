@@ -1,6 +1,6 @@
 package com.ashare.auth.jwt;
 
-import com.ashare.user.model.User;
+import com.ashare.model.User;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;

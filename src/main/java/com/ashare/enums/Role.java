@@ -1,4 +1,4 @@
-package com.ashare.user;
+package com.ashare.enums;
 
 public enum Role {
     USER,

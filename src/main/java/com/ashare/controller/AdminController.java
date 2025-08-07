@@ -1,4 +1,4 @@
-package com.ashare.admin;
+package com.ashare.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

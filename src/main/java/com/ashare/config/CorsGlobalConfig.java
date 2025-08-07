@@ -1,4 +1,4 @@
-package com.ashare.auth.config;
+package com.ashare.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

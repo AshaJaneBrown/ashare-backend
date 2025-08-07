@@ -1,6 +1,6 @@
-package com.ashare.user.repository;
+package com.ashare.repository;
 
-import com.ashare.user.model.User;
+import com.ashare.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

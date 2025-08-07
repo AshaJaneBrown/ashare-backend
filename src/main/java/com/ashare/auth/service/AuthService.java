@@ -4,9 +4,9 @@ import com.ashare.auth.dto.LoginRequest;
 import com.ashare.auth.dto.AuthResponse;
 import com.ashare.auth.dto.RegisterRequest;
 import com.ashare.auth.jwt.JwtService;
-import com.ashare.user.Role;
-import com.ashare.user.model.User;
-import com.ashare.user.repository.UserRepository;
+import com.ashare.enums.Role;
+import com.ashare.model.User;
+import com.ashare.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
