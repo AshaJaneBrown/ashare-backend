@@ -45,6 +45,12 @@ public class User implements UserDetails {
         return List.of(new SimpleGrantedAuthority("ROLE_" + role.name()));
     }
 
+    // 🔑 ГОЛОВНЕ: Spring Security буде вважати username = email
+    @Override
+    public String getUsername() {
+        return email;
+    }
+
     @Override public boolean isAccountNonExpired()     { return true; }
     @Override public boolean isAccountNonLocked()      { return true; }
     @Override public boolean isCredentialsNonExpired() { return true; }

@@ -32,6 +32,7 @@ public class PostService {
     @Transactional
     public PostDTO createPost(String content) {
         String email = SecurityContextHolder.getContext().getAuthentication().getName();
+        System.out.println("EMAIL for post " + email );
         User user = userRepository.findByEmail(email).orElseThrow();
 
         Post post = new Post();
